@@ -23,10 +23,7 @@
         <button type="submit" name="submit">Submit</button>
         </form>
 
-    </body>
-</html>
-
-<?php 
+        <?php 
         if (isset($_POST["submit"])) {
             if (!empty($_POST["nama"]) and !empty($_POST["nim"]) and !empty($_POST["gender"])){
                 echo "<h2>Output: </h2>";
@@ -39,3 +36,5 @@
             }
         }
 ?>
+    </body>
+</html>
