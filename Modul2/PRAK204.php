@@ -13,7 +13,7 @@
 <?php
 if (isset($_POST['konversi'])){
     $nilai = $_POST['nilai'];
-    if ($nilai == null){
+    if ($nilai == 0){
         echo "<h2>Hasil: nol</h2>";
     } else if ($nilai > 0 && $nilai < 10){
         echo "<h2>Hasil: satuan</h2>";
