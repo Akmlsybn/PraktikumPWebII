@@ -21,7 +21,8 @@
                     $output .= strtolower($char);
                 }
             }
-            echo $output;
+            echo "<p><strong>Input:</strong><br>$inputString</p>";
+            echo "<p><strong>Output:</strong><br>$output</p>";
         }
         ?>
     </body>
