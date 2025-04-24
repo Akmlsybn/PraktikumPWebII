@@ -39,5 +39,6 @@ if (isset($_POST['kurang'])) {
         <button type="submit" name="tambah">Tambah</button>
         <button type="submit" name="kurang">Kurang</button>
     <?php endif; ?>
+    </form>
     </body>
 </html>
