@@ -39,14 +39,21 @@ if (isset($_POST['submit'])){
         max-width: 500px;
     }
 
-    .form-container h2 {
-        text-align: center;
-        margin-bottom: 25px;
-        color: #2c3e50;
+    .form-container input[type="text"],
+    .form-container input[type="date"],
+    .form-container select,
+    .form-container textarea {
+    font-size: 1.2rem;
+    padding: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
     }
 
     .btn-primary {
-        width: 100%;
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 12px;
     }
 </style>
 
