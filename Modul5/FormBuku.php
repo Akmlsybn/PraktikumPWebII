@@ -78,6 +78,16 @@ if (isset($_POST['submit'])){
     .btn-primary:hover {
         background-color: #1a252f;
     }
+
+    .btn-secondary {
+        display: inline-block;
+        padding: 8px 16px;
+        background-color: blue;
+        color: white;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
 </style>
 
 
@@ -104,5 +114,6 @@ if (isset($_POST['submit'])){
             <input type="text" class="form-control" id="tahun_terbit" name="tahun_terbit" value="<?= $buku['tahun_terbit'] ?>" required>
         </div>
         <button type="submit" name="submit" class="btn btn-primary">Simpan</button>
+        <a href="Buku.php" class="btn btn-secondary">Kembali</a>
     </form>
 </div>

@@ -80,6 +80,16 @@ if (isset($_POST['submit'])){
     .btn-primary:hover {
         background-color: #1a252f;
     }
+
+    .btn-secondary {
+        display: inline-block;
+        padding: 8px 16px;
+        background-color: #2980b9;
+        color: white;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
 </style>
 
 
@@ -128,5 +138,6 @@ if (isset($_POST['submit'])){
             <input type="date" class="form-control" id="tgl_kembali" name="tgl_kembali" value="<?= $peminjaman['tgl_kembali'] ?>" required>
         </div>
         <button type="submit" name="submit" class="btn btn-primary w-100">Simpan</button>
+        <a href="Peminjaman.php" class="btn btn-secondary">Kembali</a>
     </form>
 </div>

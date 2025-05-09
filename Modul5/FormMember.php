@@ -55,6 +55,16 @@ if (isset($_POST['submit'])){
     font-size: 1.1rem;
     padding: 12px;
     }
+
+    .btn-secondary {
+        display: inline-block;
+        padding: 8px 16px;
+        background-color:blue;
+        color: white;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
 </style>
 
 
@@ -81,5 +91,6 @@ if (isset($_POST['submit'])){
             <input type="date" class="form-control" id="tgl_bayar" name="tgl_terakhir_bayar" value="<?= $member['tgl_terakhir_bayar'] ?>" required>
         </div>
         <button type="submit" name="submit" class="btn btn-primary">Simpan</button>
+        <a href="Member.php" class="btn btn-secondary">Kembali</a>
     </form>
 </div>
