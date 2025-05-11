@@ -29,7 +29,13 @@ CREATE TABLE IF NOT EXISTS `buku` (
   PRIMARY KEY (`id_buku`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Data exporting was unselected.
+-- Dumping data for table perpustakaan.buku: ~5 rows (approximately)
+INSERT INTO `buku` (`id_buku`, `judul_buku`, `penulis`, `penerbit`, `tahun_terbit`) VALUES
+	(1, 'Laut Bercerita', 'Leila S. Chudori', 'KPG', 2017),
+	(2, 'Laskar Pelangi', 'Andrea Hirata', 'Gramedia', 2005),
+	(3, 'Ayat Ayat Cinta', 'Habiburrahman El Shirazy', 'Sinar Pagi', 2003),
+	(4, 'Pride and Prejudice', 'Jane Austen', 'Thomas Nelson', 1813),
+	(5, 'Perahu Kertas', 'Dee Lestari', 'Bentang Pustaka', 2009);
 
 -- Dumping structure for table perpustakaan.member
 CREATE TABLE IF NOT EXISTS `member` (
@@ -42,7 +48,11 @@ CREATE TABLE IF NOT EXISTS `member` (
   PRIMARY KEY (`id_member`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Data exporting was unselected.
+-- Dumping data for table perpustakaan.member: ~2 rows (approximately)
+INSERT INTO `member` (`id_member`, `nama_member`, `nomor_member`, `alamat`, `tgl_mendaftar`, `tgl_terakhir_bayar`) VALUES
+	(1, 'Akmal', '081374973840', 'Jl.Rawasari Ujung', '2025-05-09 20:58:51', '2025-05-09'),
+	(2, 'Galih', '081313678967', 'JL. Bumi Mas', '2025-05-09 20:59:33', '2025-05-08'),
+	(3, 'Tapa Musyada', '0895363312331', 'JL. Handil Bakti ', '2025-05-09 21:00:15', '2025-05-07');
 
 -- Dumping structure for table perpustakaan.peminjaman
 CREATE TABLE IF NOT EXISTS `peminjaman` (
@@ -58,7 +68,11 @@ CREATE TABLE IF NOT EXISTS `peminjaman` (
   CONSTRAINT `FK_peminjaman_member` FOREIGN KEY (`id_member`) REFERENCES `member` (`id_member`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Data exporting was unselected.
+-- Dumping data for table perpustakaan.peminjaman: ~2 rows (approximately)
+INSERT INTO `peminjaman` (`id_peminjaman`, `tgl_pinjam`, `tgl_kembali`, `id_buku`, `id_member`) VALUES
+	(2, '2025-05-08', '2025-05-15', 2, 3),
+	(3, '2025-05-09', '2025-05-16', 1, 1),
+	(4, '2025-05-12', '2025-05-19', 4, 2);
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
