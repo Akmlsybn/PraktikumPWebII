@@ -9,7 +9,9 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-        <a class="navbar-brand" href="/">Praktikum</a>
+        <a class="navbar-brand d-flex align-items-center" href="/">
+            Praktikum Web Modul 6
+        </a>
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="/">Beranda</a></li>
@@ -19,8 +21,13 @@
     </div>
 </nav>
 
-<div class="container mt-4">
-    <?= $this->renderSection('content') ?>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+            <?= $this->renderSection('content') ?>
+        </div>
+    </div>
 </div>
 
 </body>

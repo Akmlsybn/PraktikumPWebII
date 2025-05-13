@@ -13,7 +13,7 @@ class BiodataModel extends Model
             'nim' => '2310817310010',
             'asal_prodi' => 'Teknologi Informasi',
             'hobi' => 'Main game HSR',
-            'skill' => 'PHP, JavaScript, CodeIgniter 4, HTML, CSS',
+            'skill' => 'PHP, HTML, CSS, Mobile Programming, C, Python',
             'gambar' => 'foto.jpg'
         ];
     }
